@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import bgImage from '../assets/img_1.png'
 
 const CountdownToLaunch = () => {
-  const launchDate = new Date("2025-08-09T00:00:00").getTime();
+  const launchDate = new Date("2025-08-11T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(launchDate - Date.now());
 
   useEffect(() => {
