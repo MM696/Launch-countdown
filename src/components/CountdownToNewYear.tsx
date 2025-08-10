@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import bgImage from '../assets/img_1.png'
 
 const CountdownToLaunch = () => {
   const launchDate = new Date("2025-09-17T00:00:00").getTime();
@@ -20,7 +21,7 @@ const CountdownToLaunch = () => {
   return (
     <div
       className="w-screen h-screen bg-cover bg-center flex items-center justify-center text-white"
-      style={{ backgroundImage: "url('../src/assets/img_1.png')" }}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="bg-opacity-50 p-8 rounded-lg text-center">
         <h1 className="text-5xl font-bold mb-6">🚀 Launching Soon</h1>
