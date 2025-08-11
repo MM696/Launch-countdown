@@ -1,7 +1,7 @@
 // src/CountdownPage.tsx
 import React, { useEffect, useState } from "react";
-import Logo1 from '../assets/img_2.png';
-import Logo2 from '../assets/img_3.png';
+import Logo1 from "../assets/img_2.png";
+import Logo2 from "../assets/img_3.png";
 
 const CountdownPage: React.FC = () => {
   const eventDate = new Date("2025-09-17T00:00:00");
@@ -22,20 +22,20 @@ const CountdownPage: React.FC = () => {
   return (
     <div
       style={{
-  minHeight: "100vh",
-  width: "100vw",
-  margin: 0,
-  padding: "20px",
-  background: "linear-gradient(135deg, #a82d2a 0%, #7a1f1d 100%)",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  fontFamily: "DM Serif Text, serif",
-}}
-
+        minHeight: "100vh",
+        width: "100vw",
+        margin: 0,
+        padding: "20px",
+        background: "linear-gradient(135deg, #a82d2a 0%, #7a1f1d 100%)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontFamily: "DM Serif Text, serif",
+        color: "white",
+      }}
     >
       {/* Logos Row */}
       <div
@@ -52,22 +52,10 @@ const CountdownPage: React.FC = () => {
       </div>
 
       {/* Organization Name */}
-      <p
-        style={{
-          fontWeight: "200px",
-          textAlign: "center",
-          maxWidth: "600px",
-        }}
-      >
+      <p style={{ fontWeight: 200, textAlign: "center", maxWidth: "600px" }}>
         The Association of Sacred Heart of Jesus and Immaculate Heart of Mary
       </p>
-      <p
-        style={{
-          fontWeight: "200px",
-          textAlign: "center",
-          maxWidth: "600px",
-        }}
-      >
+      <p style={{ fontWeight: 200, textAlign: "center", maxWidth: "600px" }}>
         NATIONAL CONVENTION
       </p>
 
@@ -86,6 +74,7 @@ const CountdownPage: React.FC = () => {
           overflow: "hidden",
           boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
           width: "300px",
+          color: "black",
         }}
       >
         {/* Calendar Tabs */}
@@ -117,14 +106,14 @@ const CountdownPage: React.FC = () => {
           />
         </div>
 
-        {/* Green Header */}
+        {/* Header */}
         <div
           style={{
-            background: "linear-gradient(to right, #cf392a)",
+            background: "linear-gradient(to right, #cf392a, #a82d2a)",
             color: "white",
             padding: "10px 0",
             textAlign: "center",
-            fontWeight: "200px",
+            fontWeight: 500,
             fontSize: "18px",
           }}
         >
@@ -147,15 +136,27 @@ const CountdownPage: React.FC = () => {
         {/* Footer */}
         <div
           style={{
-            background: "linear-gradient(to right, #cf392a)",
+            background: "linear-gradient(to right, #cf392a, #a82d2a)",
             color: "white",
             padding: "10px 0",
             textAlign: "center",
-            fontWeight: "200px",
+            fontWeight: 500,
           }}
         >
           DAYS TO GO
         </div>
+      </div>
+
+      {/* Theme & Sub-theme */}
+      <div style={{ marginTop: "30px", textAlign: "center", maxWidth: "600px" }}>
+        <p style={{ fontWeight: 500 }}>Theme:</p>
+        <p style={{ fontWeight: 200 }}>
+          Devotion to the Sacred Heart of Jesus: A Pilgrimage of Hope.
+        </p>
+        <p style={{ fontWeight: 500, marginTop: "20px" }}>Sub-Theme:</p>
+        <p style={{ fontWeight: 200 }}>
+          Heart of Mary: Hope of Our Salvation.
+        </p>
       </div>
     </div>
   );
