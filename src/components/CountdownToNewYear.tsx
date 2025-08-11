@@ -1,5 +1,7 @@
 // src/CountdownPage.tsx
 import React, { useEffect, useState } from "react";
+import Logo1 from '../assets/img_2.png';
+import Logo2 from '../assets/img_3.png';
 
 const CountdownPage: React.FC = () => {
   const eventDate = new Date("2025-09-17T00:00:00");
@@ -45,8 +47,8 @@ const CountdownPage: React.FC = () => {
           marginBottom: "10px",
         }}
       >
-        <img src="./src/assets/img_3.png" alt="Logo 1" style={{ height: "60px" }} />
-        <img src="./src/assets/img_2.png" alt="Logo 2" style={{ height: "60px" }} />
+        <img src={Logo2} alt="Logo 2" style={{ height: "60px" }} />
+        <img src={Logo1} alt="Logo 1" style={{ height: "60px" }} />
       </div>
 
       {/* Organization Name */}
