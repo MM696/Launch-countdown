@@ -58,10 +58,13 @@ const CountdownPage: React.FC = () => {
       <p style={{ fontWeight: 200, textAlign: "center", maxWidth: "600px" }}>
         NATIONAL CONVENTION
       </p>
+      <p style={{ fontWeight: 200, textAlign: "center", maxWidth: "600px" }}>
+        ABUJA 2025
+      </p>
 
       {/* Venue & Date */}
       <p style={{ textAlign: "center", marginTop: "5px" }}>
-        📍 DRACC Lugbe, Abuja <br />
+        📍 Holding at DRACC Lugbe, Abuja <br />
         📅 Starting on the 17th September 2025
       </p>
 
