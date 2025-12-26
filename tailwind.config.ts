@@ -5,6 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["'Inter'", "sans-serif"],
         abrilFatface: ["'Abril Fatface'", "cursive"],
         robotoSlab: ["'Roboto Slab'", "serif"],
       },
