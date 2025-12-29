@@ -25,7 +25,7 @@ const CountdownToNewYear: React.FC = () => {
   // Example: new Date(2026, 0, 1, 0, 0, 0) = January 1, 2026 at 00:00:00
   // Example: new Date(2025, 11, 25, 12, 0, 0) = December 25, 2025 at 12:00:00
   // Example: new Date(2025, 5, 15, 18, 30, 0) = June 15, 2025 at 18:30:00
-  const TARGET_DATE = new Date(2025, 11, 29, 11, 42, 0); // December 26, 2025 at 12:00:00
+  const TARGET_DATE = new Date(2026, 0, 1, 0, 0, 0); // December 26, 2025 at 12:00:00
   // ============================================
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
