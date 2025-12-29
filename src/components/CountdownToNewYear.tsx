@@ -272,7 +272,7 @@ const CountdownToNewYear: React.FC = () => {
           </h1>
           
           {/* Countdown Display */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-14 xl:gap-18 2xl:gap-20 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-20 xl:gap-28 2xl:gap-36 mb-12">
             <TimeUnit value={timeLeft.days} label="Days" />
             <TimeUnit value={timeLeft.hours} label="Hours" />
             <TimeUnit value={timeLeft.minutes} label="Minutes" />
