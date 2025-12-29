@@ -272,7 +272,7 @@ const CountdownToNewYear: React.FC = () => {
           </h1>
           
           {/* Countdown Display */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 mb-12">
             <TimeUnit value={timeLeft.days} label="Days" />
             <TimeUnit value={timeLeft.hours} label="Hours" />
             <TimeUnit value={timeLeft.minutes} label="Minutes" />
@@ -282,7 +282,7 @@ const CountdownToNewYear: React.FC = () => {
           {/* Decorative Elements */}
           <div className="flex justify-center items-center gap-4 mt-8">
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
-            <div className="text-white/50 text-sm md:text-base">
+            <div className="text-white/50 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
               {new Date().toLocaleDateString('en-US', { 
                 weekday: 'long', 
                 year: 'numeric', 
